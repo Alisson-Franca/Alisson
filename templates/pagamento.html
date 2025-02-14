@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+<body>
+    <h2>Escolha a forma de pagamento</h2>
+    <form method="POST">
+        <label>
+            <input type="radio" name="metodo" value="pix" required> Pix
+        </label><br>
+        <label>
+            <input type="radio" name="metodo" value="cartao" required>Cartão de Crédito
+        </label><br>
+        <button type="submit">Confirmar Pagamento</button>
+    </form>
+
+    {% if mensagem  %}
+        <p>{{mensagem}}</p>
+    {% endif %}
+
+</body>
+</html>
